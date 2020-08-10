@@ -11,7 +11,7 @@ function onLoad() {
     {
       supportedMethods: ["basic-card"],
       data: {
-        supportedNetworks: ["visa", "mastercard"],
+        supportedNetworks: ["visa", "mastercard", "maestro"],
         supportedTypes: ["debit", "credit"],
       },
     },
