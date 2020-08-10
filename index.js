@@ -13,8 +13,8 @@ function onLoad() {
       data: {
         supportedNetworks: ['visa', 'mastercard', 'amex', 'discover','diners', 'jcb', 'unionpay'],
         supportedTypes: ["debit", "credit"]
-      },
-    },
+      }
+    }
   ];
   const details = {
     id: "demo-paymentrequest-api-unique-id-012345",
@@ -24,23 +24,23 @@ function onLoad() {
         amount: {
           currency: "USD",
           value: "55.00",
-        },
+        }
       },
       {
         label: "Sales Tax",
         amount: {
           currency: "USD",
           value: "5.00",
-        },
-      },
+        }
+      }
     ],
     total: {
       label: "Total due",
       amount: {
         currency: "USD",
         value: "65.00",  // This includes shipping costs USD$5.00
-      },
-    },
+      }
+    }
   };
   const shippingOptions = [
     {
@@ -58,8 +58,8 @@ function onLoad() {
       amount: {
         currency: "USD",
         value: "25.00",
-      },
-    },
+      }
+    }
   ];
   pr = new window.PaymentRequest(methodData, details);  //, shippingOptions);
   return true;
