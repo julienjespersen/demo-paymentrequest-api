@@ -12,8 +12,9 @@ const paymentMethods = [{
   supportedMethods: 'basic-card',
   data: {
     supportedNetworks: [
-      'visa', 'mastercard', 'amex', 'discover', 'diners', 'jcb', 'unionpay', 'maestro'
-    ]
+      'visa', 'mastercard', 'amex', 'discover', 'diners', 'jcb', 'unionpay', 'troy', 'mir', 'cartebancaire'
+    ],
+    supportedTypes: ['credit', 'debit']
   }
 }, {
   supportedMethods: 'https://bobpay.xyz/pay',
