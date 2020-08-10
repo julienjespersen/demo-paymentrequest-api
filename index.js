@@ -7,15 +7,18 @@ function onLoad() {
     updateBrowserSupportDisplay();
     return false;
   }
-  const methodData = [
-    {
-      supportedMethods: ["basic-card"],
-      data: {
-        supportedNetworks: ['visa', 'mastercard', 'amex', 'discover','diners', 'jcb', 'unionpay'],
-        supportedTypes: ["debit", "credit"]
-      }
-    }
-  ];
+  // Supported payment methods
+const paymentMethods = [{
+  supportedMethods: 'basic-card',
+  data: {
+    supportedNetworks: [
+      'visa', 'mastercard', 'amex', 'discover',
+      'diners', 'jcb', 'unionpay'
+    ]
+  }
+}, {
+  supportedMethods: 'https://bobpay.xyz/pay',
+}];
   const details = {
     id: "demo-paymentrequest-api-unique-id-012345",
     displayItems: [
