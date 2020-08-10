@@ -12,8 +12,7 @@ const paymentMethods = [{
   supportedMethods: 'basic-card',
   data: {
     supportedNetworks: [
-      'visa', 'mastercard', 'amex', 'discover',
-      'diners', 'jcb', 'unionpay'
+      'visa', 'mastercard', 'amex', 'discover', 'diners', 'jcb', 'unionpay', 'maestro'
     ]
   }
 }, {
