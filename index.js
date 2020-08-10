@@ -8,7 +8,7 @@ function onLoad() {
     return false;
   }
   // Supported payment methods
-const paymentMethods = [{
+const methodData = [{
   supportedMethods: 'basic-card',
   data: {
     supportedNetworks: [
